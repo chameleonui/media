@@ -1,7 +1,7 @@
 
 # media
 
-  Multimedia CSS object
+Multimedia CSS object
 
 ## Installation
 
@@ -13,24 +13,16 @@ Install with [component](https://github.com/component/component):
 
 ### Variables
 
-    media-gutter ?= 12px;
-    media-margin-bottom ?= 0;
-    media-media-query ?= null;
+```
+media-gutter ?= 12px;
+media-margin-bottom ?= 0;
+```
 
 ### Init
-    
-    media();
 
-### Example
-
-    <div class="media media-left">
-        <a class="media-img" href="#" >
-            <img src="http://dummyimage.com/100x100" alt="Hi" />
-        </a>
-        <div class="media-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nam quaerat iure consequatur incidunt! Architecto, harum perferendis accusamus aliquam natus.</p>
-        </div>
-    </div>
+```    
+media();
+```    
 
 ## Author(s)
 
