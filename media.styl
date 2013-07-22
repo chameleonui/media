@@ -1,0 +1,75 @@
+// =============================================================================
+// Media object
+// =============================================================================
+
+// Help
+// =============================================================================
+//<div class="media">
+//  <a class="img" href="#" >
+//      <img src="/image.jpg" alt="Image alt." width="" />
+//  </a>
+//  <div class="body">
+//      Text of the media object
+//  </div>
+//</div>
+
+
+// Variables
+// =============================================================================
+media-gutter ?= 12px;
+media-margin-bottom ?= 0;
+
+
+// Mixins
+// =============================================================================
+media-hand(){
+    .media {
+        clearfix();
+        margin-bottom: media-margin-bottom;
+        
+        > img.media-img,
+        > .media-img > img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        > .media-body {
+            clearfix();
+        }
+    }
+} 
+
+media-lap-up(){
+    .media.media-left > .media-img {
+        float: left;
+        margin: 0 media-gutter media-gutter 0;
+    }
+
+    .media.media-right > .media-img {
+        float: right;
+        margin: 0 0 media-gutter media-gutter;
+    }
+}
+
+// =============================================================================
+
+media(){
+    // Wrap by media query if responsive grid enabled
+    if (grid-lap-up-media is defined && grid-hand-media is defined){
+        @media grid-hand-media {
+            media-hand();
+        }
+    } else {
+        media-hand();
+    }
+
+    // Wrap by media query if responsive grid enabled
+    if (grid-lap-up-media is defined && grid-hand-media is defined){
+        @media grid-lap-up-media {
+            media-lap-up();
+        }
+    } else {
+        media-lap-up();
+    }
+
+}

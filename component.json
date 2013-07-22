@@ -1,0 +1,15 @@
+{
+  "name": "media",
+  "repo": "chameleonui/media",
+  "description": "Multimedia CSS object",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "chameleonui/utils": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "media.styl"
+  ]
+}
