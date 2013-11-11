@@ -27,8 +27,7 @@ media-hand(){
         clearfix();
         margin-bottom: media-margin-bottom;
         
-        > img.media-img,
-        > .media-img > img {
+        > .media-img {
             display: block;
             margin: 0 auto;
         }
@@ -40,15 +39,39 @@ media-hand(){
 } 
 
 media-lap-up(){
-    .media.media-left > .media-img {
-        float: left;
-        margin: 0 media-gutter media-gutter 0;
+    
+    .media {
+        clearfix();
     }
 
-    .media.media-right > .media-img {
-        float: right;
-        margin: 0 0 media-gutter media-gutter;
+    .media.media-left {
+        
+        > .media-img {
+            float: left;
+            margin: 0 media-gutter media-gutter 0;
+        }
+
+        > .media-body {
+            width: auto;
+            clear: right
+            overflow: hidden;
+        }
     }
+
+    .media.media-right {
+
+        > .media-img {
+            float: right;
+            margin: 0 0 media-gutter media-gutter;
+        }
+
+        > .media-body {
+            width: auto;
+            clear: left
+            overflow: hidden;
+        }
+    }
+
 }
 
 // =============================================================================

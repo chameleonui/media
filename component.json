@@ -7,7 +7,9 @@
   "dependencies": {
     "chameleonui/utils": "*"
   },
-  "development": {},
+  "development": {
+    "chameleonui/core": "*"
+    },
   "license": "MIT",
   "styles": [
     "media.styl"
