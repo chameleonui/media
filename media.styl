@@ -4,14 +4,14 @@
 
 // Help
 // =============================================================================
-//<div class="media">
-//  <a class="img" href="#" >
-//      <img src="/image.jpg" alt="Image alt." width="" />
-//  </a>
-//  <div class="body">
-//      Text of the media object
-//  </div>
-//</div>
+// <div class="media media-left">
+//     <a class="media-img" href="#" >
+//         <img src="/image.jpg" alt="Image alt." />
+//     </a>
+//     <div class="media-body">
+//         Text of the media object
+//     </div>
+// </div>
 
 
 // Variables
@@ -27,8 +27,7 @@ media-hand(){
         clearfix();
         margin-bottom: media-margin-bottom;
         
-        > img.media-img,
-        > .media-img > img {
+        > .media-img {
             display: block;
             margin: 0 auto;
         }
@@ -40,15 +39,40 @@ media-hand(){
 } 
 
 media-lap-up(){
-    .media.media-left > .media-img {
-        float: left;
-        margin: 0 media-gutter media-gutter 0;
+    
+    .media {
+        clearfix();
+
+        > .media-body {
+            width: auto
+            overflow: hidden
+        }
     }
 
-    .media.media-right > .media-img {
-        float: right;
-        margin: 0 0 media-gutter media-gutter;
+    .media.media-left {
+        
+        > .media-img {
+            float: left;
+            margin: 0 media-gutter media-gutter 0;
+        }
+
+        > .media-body {
+            clear: right
+        }
     }
+
+    .media.media-right {
+
+        > .media-img {
+            float: right;
+            margin: 0 0 media-gutter media-gutter;
+        }
+
+        > .media-body {
+            clear: left
+        }
+    }
+
 }
 
 // =============================================================================

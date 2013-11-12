@@ -1,5 +1,5 @@
 
-build: components tumbnail.styl
+build: components media.styl
 	@component build --dev
 
 example: example.styl
