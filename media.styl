@@ -4,14 +4,14 @@
 
 // Help
 // =============================================================================
-//<div class="media">
-//  <a class="img" href="#" >
-//      <img src="/image.jpg" alt="Image alt." width="" />
-//  </a>
-//  <div class="body">
-//      Text of the media object
-//  </div>
-//</div>
+// <div class="media media-left">
+//     <a class="media-img" href="#" >
+//         <img src="/image.jpg" alt="Image alt." />
+//     </a>
+//     <div class="media-body">
+//         Text of the media object
+//     </div>
+// </div>
 
 
 // Variables
@@ -42,6 +42,11 @@ media-lap-up(){
     
     .media {
         clearfix();
+
+        > .media-body {
+            width: auto
+            overflow: hidden
+        }
     }
 
     .media.media-left {
@@ -52,9 +57,7 @@ media-lap-up(){
         }
 
         > .media-body {
-            width: auto;
             clear: right
-            overflow: hidden;
         }
     }
 
@@ -66,9 +69,7 @@ media-lap-up(){
         }
 
         > .media-body {
-            width: auto;
             clear: left
-            overflow: hidden;
         }
     }
 

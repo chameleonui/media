@@ -13,20 +13,33 @@ Install with [component](https://github.com/component/component):
 
 ### Variables
 
-```
+```css
 media-gutter ?= 12px;
 media-margin-bottom ?= 0;
 ```
 
 ### Init
 
-```    
+```css
 media();
-```    
+```
+
+### HTML markup
+
+```html
+<div class="media media-left">
+    <a class="media-img" href="#" >
+        <img src="/image.jpg" alt="Image alt." />
+    </a>
+    <div class="media-body">
+        Text of the media object
+    </div>
+</div>
+```
 
 ## Author(s)
 
-Edgedesign s.r.o. – Tomas Kuba
+[Edgedesign s.r.o.](http://www.edgedesing.cz) – [Tomas Kuba](https://github.com/tomaskuba), [Daniel Sitek](https://github.com/danielsitek)
 
 ## License
 
